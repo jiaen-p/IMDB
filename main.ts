@@ -22,6 +22,7 @@ let myImdb = new Imdb([m1, m2]);
 let imdbBBDD = myImdb.toJSON()
 
 // --------------------------------------------
-import * as fs from 'fs-extra'
+myImdb.escribirEnFicheroJson("peliculas")
 
-fs.writeJsonSync('./prueba.json', imdbBBDD)
+let myImdb2 = new Imdb([]).obtenerInstanciaIMSB("peliculas")
+myImdb.escribirEnFicheroJson("escrito")
