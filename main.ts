@@ -20,3 +20,6 @@ m2.print()
 let myImdb = new Imdb([m1, m2]);
 
 let imdbBBDD = myImdb.toJSON()
+
+// --------------------------------------------
+import {fs} from 'fs'
