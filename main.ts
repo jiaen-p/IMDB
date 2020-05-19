@@ -18,3 +18,5 @@ let m2 = new Movie("Guns Akimbo", 2020, "UK, New Zealand and West Germany", "Com
 m2.print()
 
 let myImdb = new Imdb([m1, m2]);
+
+let imdbBBDD = myImdb.toJSON()
