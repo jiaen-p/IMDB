@@ -6,3 +6,12 @@ let jiaen = new Professional('jiaen', 28, 'masc', 76, 186, 'black', 'brown', 'as
 console.log(alex.print());
 console.log(jiaen.print());
 
+// ----------------------------------------------
+
+import { Movie } from './Movie'
+
+let m1 = new Movie("Infinity War", 2018, "USA", "Action")
+m1.print()
+
+let m2 = new Movie("Guns Akimbo", 2020, "UK, New Zealand and West Germany", "Comedy and Action")
+m2.print()

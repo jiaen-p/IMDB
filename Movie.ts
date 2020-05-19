@@ -19,7 +19,8 @@ export class Movie{
         this.genre = genre
     }
     public print(){
-        let text = `Title: ${this.title}
+        let text = `
+        Title: ${this.title}
         Year released: ${this.releaseYear}
         Nationality: ${this.nationality}
         Director: ${this.director}
@@ -29,10 +30,8 @@ export class Movie{
         Is it MCU: ${this.isMCU}
         Main character name: ${this.mainCharacterName}
         Producer: ${this.producer}
-        Distrubuted by: ${this.distributor}`
+        Distrubuted by: ${this.distributor}
+        `
         console.log(text)
     }
 }
-
-let m1 = new Movie("banana",1234,"banana kindom", "animated")
-m1.print()
