@@ -18,8 +18,6 @@
   "homepage": "https://github.com/jiaen-p/IMDB#readme",
   "dependencies": {
     "fs-extra": "^9.0.0",
-    "prompt": "^1.0.0",
-    "readline": "^1.3.0",
     "readline-sync": "^1.4.10"
   }
 }
