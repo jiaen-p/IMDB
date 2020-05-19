@@ -27,7 +27,3 @@ myImdb.escribirEnFicheroJson("peliculas")
 let myImdb2 = new Imdb([]).obtenerInstanciaIMSB("peliculas")
 myImdb.escribirEnFicheroJson("escrito")
 //  -----------------------
-let m3 = new Movie("alsdkjafl",2200, "España", "Comedia")
-myImdb.peliculas.push(m3)
-
-myImdb.escribirEnFicheroJson("imdbBBDD")
