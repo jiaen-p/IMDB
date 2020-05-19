@@ -22,4 +22,6 @@ let myImdb = new Imdb([m1, m2]);
 let imdbBBDD = myImdb.toJSON()
 
 // --------------------------------------------
-import {fs} from 'fs'
+import {fs} from 'file-system'
+
+fs.write
