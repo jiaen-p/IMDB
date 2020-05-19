@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/jiaen-p/IMDB#readme",
   "dependencies": {
-    "file-system": "^2.2.2"
+    "fs-extra": "^9.0.0"
   }
 }
