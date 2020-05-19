@@ -27,3 +27,8 @@ myImdb.escribirEnFicheroJson("peliculas")
 let myImdb2 = new Imdb([]).obtenerInstanciaIMSB("peliculas")
 myImdb.escribirEnFicheroJson("escrito")
 //  -----------------------
+import * as readline from 'readline-sync'
+let p1 = new Movie(readline.question('Titulo: '), Number(readline.question('Año: ')), readline.question('Pais: '), readline.question('Genero: '));
+
+myImdb.peliculas.push(p1);
+myImdb.escribirEnFicheroJson('imdbBBDD');
