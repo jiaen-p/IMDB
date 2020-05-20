@@ -24,7 +24,7 @@ let myImdb = new Imdb([m1, m2]);
 // --------------------------------------------
 myImdb.escribirEnFicheroJson("peliculas")
 
-// let myImdb2 = new Imdb([]).obtenerInstanciaIMSB("peliculas")
+console.log("to json",Imdb.obtenerInstanciaIMSB("peliculas").toJSON().peliculas)
 //  -----------------------
 import * as readline from 'readline-sync'
 let p1 = new Movie(readline.question('Titulo: '),
