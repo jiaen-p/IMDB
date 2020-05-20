@@ -5,8 +5,8 @@ export class Movie{
     public releaseYear: number
     public actors: Professional[]
     public nationality: string
-    public director: string
-    public writer: string
+    public director: Professional
+    public writer: Professional
     public language: string
     public platform: string
     public isMCU: boolean
@@ -14,12 +14,13 @@ export class Movie{
     public producer: string
     public distributor: string
     private genre:string
-    constructor(title: string,actors: Professional[], releaseYear: number, nationality: string, genre: string){
+    constructor(title: string,actors: Professional[], releaseYear: number, nationality: string, genre: string, director: Professional){
         this.title = title
         this.actors = actors
         this.releaseYear = releaseYear
         this.nationality = nationality
         this.genre = genre
+        this.director = director
     }
     public print(){
         let text = `
@@ -35,6 +36,7 @@ export class Movie{
         Main character name: ${this.mainCharacterName}
         Producer: ${this.producer}
         Distrubuted by: ${this.distributor}
+        Director: ${this.director}
         `
         console.log(text)
     }
