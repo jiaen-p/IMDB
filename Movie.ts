@@ -27,16 +27,15 @@ export class Movie{
         Title: ${this.title}
         Year released: ${this.releaseYear}
         Nationality: ${this.nationality}
-        Actor: : ${this.actors}
-        Director: ${this.director} printProfessional
-        Writer: ${this.writer} printProfessional
+        Actor: : ${this.actors.forEach(actor => actor.print())}
+        Director: ${this.director.print()}
+        Writer: ${this.writer.print()}
         Language: ${this.language}
         Platform: ${this.platform}
         Is it MCU: ${this.isMCU}
         Main character name: ${this.mainCharacterName}
         Producer: ${this.producer}
         Distrubuted by: ${this.distributor}
-        Director: ${this.director}
         `
         console.log(text)
     }
